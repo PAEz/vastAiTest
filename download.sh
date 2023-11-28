@@ -1,3 +1,4 @@
+#!/bin/bash
 mkdir -p /workspace/ComfyUI/models/checkpoints2
 cd /workspace/ComfyUI/models/checkpoints2
 
