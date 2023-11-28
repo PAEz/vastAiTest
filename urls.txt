@@ -1,0 +1,88 @@
+# wget -O disneyPixarCartoon_v10.safetensors https://civitai.com/api/download/models/69832
+
+# cd /workspace/ComfyUI/models/checkpoints2
+# wget -O realcartoonXL_v5.safetensors https://civitai.com/api/download/models/234137
+
+# wget -O epicrealism_naturalSinRC1VAE.safetensors https://civitai.com/api/download/models/143906?
+
+# wget -O dreamshaper_8.safetensors https://civitai.com/api/download/models/128713
+https://civitai.com/api/download/models/128713
+  dir=/workspace/ComfyUI/models/checkpoints2
+  out=dreamshaper_8.safetensors
+
+https://huggingface.co/latent-consistency/lcm-lora-sdv1-5/resolve/main/pytorch_lora_weights.safetensors?download=true
+  dir=/workspace/ComfyUI/models/checkpoints2
+  out=pytorch_lora_weights.safetensors 
+
+# Install models for AnimatedDiff
+
+https://huggingface.co/guoyww/animatediff/resolve/main/mm_sd_v15_v2.ckpt
+  dir=/workspace/ComfyUI/custom_nodes/ComfyUI-AnimateDiff-Evolved/models
+
+https://huggingface.co/guoyww/animatediff/resolve/main/mm_sd_v14.ckpt
+  dir=/workspace/ComfyUI/custom_nodes/ComfyUI-AnimateDiff-Evolved/models
+
+# Install models for IPAdapter Plus
+
+https://huggingface.co/h94/IP-Adapter/resolve/main/models/ip-adapter_sd15.bin
+  dir=/workspace/ComfyUI/custom_nodes/ComfyUI_IPAdapter_plus/models
+
+#Use the below model for IPAdator when the text prompt should have much more bearing on the generation.
+
+https://huggingface.co/h94/IP-Adapter/blob/main/models/ip-adapter_sd15_light.bin
+  dir=/workspace/ComfyUI/custom_nodes/ComfyUI_IPAdapter_plus/models
+
+#IPAdaptor needs a Clipvision model to run successfully.
+
+https://huggingface.co/h94/IP-Adapter/resolve/main/models/image_encoder/model.safetensors
+  dir=/workspace/ComfyUI/models/clip_vision
+
+# Code to add ControlNet models
+
+https://huggingface.co/lllyasviel/ControlNet-v1-1/resolve/main/control_v11p_sd15_canny.pth
+  dir=/workspace/ComfyUI/models/controlnet
+  
+https://huggingface.co/lllyasviel/ControlNet-v1-1/resolve/main/control_v11p_sd15_canny.yaml
+  dir=/workspace/ComfyUI/models/controlnet
+  
+https://huggingface.co/lllyasviel/ControlNet-v1-1/resolve/main/control_v11f1p_sd15_depth.pth
+  dir=/workspace/ComfyUI/models/controlnet
+  
+https://huggingface.co/lllyasviel/ControlNet-v1-1/resolve/main/control_v11f1p_sd15_depth.yaml
+  dir=/workspace/ComfyUI/models/controlnet
+
+https://huggingface.co/lllyasviel/ControlNet/resolve/main/models/control_sd15_hed.pth
+  dir=/workspace/ComfyUI/models/controlnet
+
+https://huggingface.co/lllyasviel/ControlNet-v1-1/resolve/main/control_v11p_sd15_openpose.pth
+  dir=/workspace/ComfyUI/models/controlnet
+
+https://huggingface.co/lllyasviel/ControlNet-v1-1/resolve/main/control_v11p_sd15_openpose.yaml
+  dir=/workspace/ComfyUI/models/controlnet
+
+https://huggingface.co/lllyasviel/ControlNet-v1-1/resolve/main/control_v11p_sd15_lineart.pth
+  dir=/workspace/ComfyUI/models/controlnet
+
+https://huggingface.co/lllyasviel/ControlNet-v1-1/resolve/main/control_v11p_sd15_lineart.yaml
+  dir=/workspace/ComfyUI/models/controlnet
+
+#SEG CONTROLNET
+
+https://huggingface.co/lllyasviel/ControlNet-v1-1/resolve/main/control_v11p_sd15_seg.pth
+  dir=/workspace/ComfyUI/models/controlnet
+
+https://huggingface.co/lllyasviel/ControlNet-v1-1/resolve/main/control_v11p_sd15_seg.yaml
+  dir=/workspace/ComfyUI/models/controlnet
+
+# Install upscale models
+
+# Navigate to the custom_nodes directory
+
+https://github.com/xinntao/Real-ESRGAN/releases/download/v0.2.1/RealESRGAN_x2plus.pth
+  dir=/workspace/ComfyUI/models/upscale_models
+
+
+
+
+
+
